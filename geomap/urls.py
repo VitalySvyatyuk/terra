@@ -1,9 +1,10 @@
 from django.urls import path
 from django.views.generic import TemplateView
 
-from .views import get_regions
+from .models import Region
+from .views import RegionView
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name='geomap/geomap.html')),
-    path('get_regions/', get_regions, name='get_regions'),
+    path('get_regions.geojson', RegionView.as_view(model=Region)),
 ]

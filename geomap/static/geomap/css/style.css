@@ -2,3 +2,7 @@
     width: 70%;
     height: 600px;
 }
+
+.popup-text {
+    margin: 0 !important;
+}
