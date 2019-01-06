@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="{% static 'geomap/js/leaflet.ajax.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'geomap/css/style.css' %}">
+</head>
+<body>
+    <div id="geomap"></div>
+    <script src="{% static 'geomap/js/script.js' %}"></script>
+</body>
+</html>
